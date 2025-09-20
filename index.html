@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Álbum de Homenagem - Aniversário</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="stage">
+    <div style="position:absolute;left:30px;top:10px;color:#4b4b4b;font-weight:700">
+      Memórias ❤️
+    </div>
+
+    <main class="album" role="main">
+      <div class="viewport" id="viewport">
+        <div class="pages" id="pages">
+          <!-- CAPA DO ÁLBUM -->
+          <div class="page cover">
+            <div class="cover-content">
+              <h1>Álbum da Minha Amada ❤️</h1>
+              <p>Uma galeria de memórias feito com muito amor, só para você!</p>
+              <button id="startAlbum">Entrar no Álbum 💕</button>
+            </div>
+          </div>
+          <!-- As outras páginas serão injetadas pelo script.js -->
+        </div>
+      </div>
+      
+      <div class="nav" aria-hidden>
+        <button id="prev" class="btn" aria-label="Página anterior">◀</button>
+        <button id="next" class="btn" aria-label="Próxima página">▶</button>
+      </div>
+      
+      <div class="progress" id="progress"></div>
+      <div id="floatingHeartContainer"></div>
+    </main>
+  </div>
+    
+  <!-- Balões -->
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+
+  <!-- Estrelinhas -->
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+  <div class="sparkle"></div>
+
+  <!-- Modal de Senha -->
+  <div id="passwordModal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <div id="passwordPrompt">
+        Digite a senha para abrir o álbum 💕
+      </div>
+      <input type="text" id="passwordInput" placeholder="DD/MM">
+      <div>
+        <button id="passwordSubmit" class="choice-btn sim">Abrir Álbum</button>
+      </div>
+      <div id="passwordError" style="display:none;">Senha incorreta! 💔 Tente novamente.</div>
+    </div>
+  </div>
+
+  <!-- Modal Proposal -->
+  <div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" id="modalCard">
+      <div id="modalContent">
+        Iae loirinha, aceita namorar comigo? 💕
+      </div>
+      <div class="choices">
+        <button id="yes" class="choice-btn sim">Sim 💖</button>
+        <button id="obvio" class="choice-btn obvio">Óbvio 😍</button>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
