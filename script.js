@@ -282,7 +282,7 @@ startBtn.addEventListener("click", (e) => {
 /* Listener único: valida senha e inicia o álbum corretamente */
 passwordSubmit.addEventListener("click", () => {
   const senha = passwordInput.value.trim();
-  const senhaCorreta = "00"; // coloque aqui a senha correta
+  const senhaCorreta = "0410"; // coloque aqui a senha correta
 
   if (senha === senhaCorreta) {
     // fechar modal
@@ -405,4 +405,5 @@ passwordSubmit.addEventListener("click", () => {
     passwordInput.focus();
   }
 });
+
 
