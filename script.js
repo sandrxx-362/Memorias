@@ -261,7 +261,7 @@ function celebrate(responseText){
 }
 
 yesBtn.addEventListener('click', ()=>celebrate('Eba! Agora somos oficilamente namorados❤️'));
-obvioBtn.addEventListener('click', ()=>celebrate('Óbvio que você iria aceitar, nè... Agora é oficial😍'));
+obvioBtn.addEventListener('click', ()=>celebrate('Óbvio que você iria aceitar, né... Agora é oficial😍'));
 
 /* ================== CAIXINHA DE SENHA (UNIFICADA E CORRIGIDA) ================== */
 const passwordModal = document.getElementById("passwordModal");
@@ -366,7 +366,7 @@ musicBtn.addEventListener("click", () => {
 /* Listener único: valida senha e inicia o álbum corretamente */
 passwordSubmit.addEventListener("click", () => {
   const senha = passwordInput.value.trim();
-  const senhaCorreta = "00"; // coloque aqui a senha correta
+  const senhaCorreta = "0410"; // coloque aqui a senha correta
 
   if (senha === senhaCorreta) {
     // fechar modal
@@ -405,3 +405,4 @@ passwordSubmit.addEventListener("click", () => {
     passwordInput.focus();
   }
 });
+
